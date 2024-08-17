@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/kishore720721110015/Fetching-data-using-free-API-using-React.git/static/css/main.fd3fd8c2.css",
-    "main.js": "/kishore720721110015/Fetching-data-using-free-API-using-React.git/static/js/main.b868cddd.js",
-    "index.html": "/kishore720721110015/Fetching-data-using-free-API-using-React.git/index.html",
-    "main.fd3fd8c2.css.map": "/kishore720721110015/Fetching-data-using-free-API-using-React.git/static/css/main.fd3fd8c2.css.map",
-    "main.b868cddd.js.map": "/kishore720721110015/Fetching-data-using-free-API-using-React.git/static/js/main.b868cddd.js.map"
+    "main.css": "/Fetching-data-using-free-API-using-React/static/css/main.fd3fd8c2.css",
+    "main.js": "/Fetching-data-using-free-API-using-React/static/js/main.b868cddd.js",
+    "index.html": "/Fetching-data-using-free-API-using-React/index.html",
+    "main.fd3fd8c2.css.map": "/Fetching-data-using-free-API-using-React/static/css/main.fd3fd8c2.css.map",
+    "main.b868cddd.js.map": "/Fetching-data-using-free-API-using-React/static/js/main.b868cddd.js.map"
   },
   "entrypoints": [
     "static/css/main.fd3fd8c2.css",
