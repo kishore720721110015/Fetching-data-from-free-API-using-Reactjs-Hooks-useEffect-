@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kishore720721110015/Fetching-data-using-free-API-using-React.git/static/css/main.fd3fd8c2.css",
+    "main.js": "/kishore720721110015/Fetching-data-using-free-API-using-React.git/static/js/main.b868cddd.js",
+    "index.html": "/kishore720721110015/Fetching-data-using-free-API-using-React.git/index.html",
+    "main.fd3fd8c2.css.map": "/kishore720721110015/Fetching-data-using-free-API-using-React.git/static/css/main.fd3fd8c2.css.map",
+    "main.b868cddd.js.map": "/kishore720721110015/Fetching-data-using-free-API-using-React.git/static/js/main.b868cddd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd3fd8c2.css",
+    "static/js/main.b868cddd.js"
+  ]
+}
