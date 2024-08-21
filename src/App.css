@@ -1,69 +1,72 @@
-.App {
-  text-align: center;
+.employee-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  /* background-color: #282c34; */
-  /* min-height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-table{
-  margin-top: 10px;
-  margin-left: 35px;
-  width: 95%;
-  border: 1px solid rgb(25, 117, 193);
+form{
+  margin-top: 100px;
+  border: 1px solid black;
+  padding-bottom: 20px;
   border-radius: 5px;
-  border-collapse: collapse;
+  background-color: #ccc;
+}
+h2{
   text-align: center;
+  margin-bottom: 60px;
 }
-th,td{
-  border: 1px solid #1c7ccb;
-  color: black;
+.first{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-left: 150px;
 }
-nav ul li{
-  display: inline-block;
+label{
+  display: block;
+  margin-top: 10px;
 }
-li{
-  margin-left: 80px;
-  justify-content: center;
-}
-li a{
-  text-decoration: none;
-  font-size: large;
-  color: white;
 
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
 }
-nav{
-  background-color: #1c7ccb;
-  padding: 0px;
-  margin: 0px;
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="time"],
+select {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
 }
+
+ input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+
+.submit:hover {
+  background-color: #0056b3;
+} 
+button{
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 700px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: skyblue;
+}
+button:hover{
+  background-color: #0056b3;
+  }

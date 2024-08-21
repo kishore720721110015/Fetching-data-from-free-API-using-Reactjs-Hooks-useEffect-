@@ -1,8 +1,328 @@
 // import React from 'react';
 import ReactDOM from 'react-dom';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import './index.css';
-// import App from './App';
+// import App from './App';// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import React, { useEffect, useMemo, useState } from 'react';
+import './index.css';
+import EmployeeForm from './App.js';
+
+function Home(){
+  return(
+    <div>
+      <EmployeeForm/>
+    </div>  
+  )
+}
+ReactDOM.render(<EmployeeForm/>,document.getElementById("root"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import Counter from './Counter';
 // import reportWebVitals from './reportWebVitals';
 // function Counter() {
@@ -28,6 +348,80 @@ import './index.css';
 
 // ReactDOM.render(<Counter/>,document.getElementById("root"));
 
+// function Employee({user}){
+//   let meassage;
+//   switch(user){
+//     case "John":
+//       meassage = "Hello John";
+//       break;
+//     case "Jane":
+//       meassage = "Hello Jane";
+//       break;
+//     case "Black":
+//       meassage = "Hello Black";
+//       break;
+//     default:
+//       meassage = "Hello User";
+//   }
+//   return (
+//     <div>
+//       <h1>{meassage}</h1>
+//     </div>
+//     );
+// }
+// ReactDOM.render(<Employee user={"Jane"}/>,document.getElementById("root"));
+
+// function Clickbutton({isCollegeopen}){
+//   return(
+//     <div>
+//       <button>{isCollegeopen?"collegeopen":"click here to visit college"}</button>
+//     </div>
+//   );
+// }
+// ReactDOM.render(<Clickbutton isCollegeopen={true}/>,document.getElementById("root"));
+
+// function Examplerender({isCollegeopen}){
+//   if(isCollegeopen){
+//     return<h2>welcome to college</h2>
+//   }
+//   else{
+//     return<h2>click here to visit college</h2>
+//   }
+// }
+// ReactDOM.render(<Examplerender/>,document.getElementById("root"));
+
+// function Examplerender({Welcomemessage}){
+//   return(
+//     <div>
+//      <h1> welcome to college</h1>
+//      {Welcomemessage.length>0 && <h2>you have {Welcomemessage.length} Welcome to my college</h2>}
+//     </div>
+//   )
+// }
+// ReactDOM.render(<Examplerender Welcomemessage={["welcome","to","college"]}/>,document.getElementById("root"))
+
+
+// function Examplerender(){
+//   const [number,setNumber] =useState(0);
+
+
+// function SquareNum(num){
+//   return Math.pow(num,3)
+// }
+// const result =useMemo(()=>SquareNum(number),[number]);
+
+
+// return(
+//   <div>
+//     <input type="number" value={number} onChange={(e)=>{setNumber(e.target.value)}}/>
+//     <h1>Square tof the number : {result}</h1>
+//   </div>
+// );
+// }
+// ReactDOM.render(<Examplerender/>,document.getElementById("root")); 
+
+
+
 // function Example(){
 //   const [count, setCount] = useState(5000);
 
@@ -44,37 +438,37 @@ import './index.css';
 // }
 // ReactDOM.render(<Example/>,document.getElementById("root"));
 
-function Userdemo(){
-  const [users,setUsers]=useState([]);
-  const [loading,setLoading]=useState(true);
-  useEffect(()=>{
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => response.json())
-      .then(data=>{
-        setUsers(data);
-        setLoading(false);
-      })
-      .catch(error=>{
-        console.error("if it is not loaading,will be error meassage");
-        setLoading(false);
-      });
-      },[]);
+// function Userdemo(){
+//   const [users,setUsers]=useState([]);
+//   const [loading,setLoading]=useState(true);
+//   useEffect(()=>{
+//     fetch('https://jsonplaceholder.typicode.com/users')
+//       .then(response => response.json())
+//       .then(data=>{
+//         setUsers(data);
+//         setLoading(false);
+//       })
+//       .catch(error=>{
+//         console.error("if it is not loaading,will be error meassage");
+//         setLoading(false);
+//       });
+//       },[]);
 
-      if(loading){
-        return <div>Loading...</div>
-      }
-      return (
-        <div>
-          <h1>List out the usernames in API</h1>
-          <ul>
-            {users.map(user=>(
-              <li key={user.id}>{user.username}</li>
-            ))}
-          </ul>
-        </div>
-        );
-  }
-  ReactDOM.render(<Userdemo/>,document.getElementById("root"));
+//       if(loading){
+//         return <div>Loading...</div>
+//       }
+//       return (
+//         <div>
+//           <h1>List out the usernames in API</h1>
+//           <ul>
+//             {users.map(user=>(
+//               <li key={user.id}>{user.username}</li>
+//             ))}
+//           </ul>
+//         </div>
+//         );
+//   }
+//   ReactDOM.render(<Userdemo/>,document.getElementById("root"));
 
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
